@@ -19,9 +19,9 @@ const Doctors = ({ apps, setApps }) => {
          Our Instructors
       </h3>
 
-      <Row className="justify-content-center">
+      <Row className="justify-content-center ">
         {doctorData.map(({ id, img, dep, name }) => (
-          <Col xs={6} sm={4} md={3} key={id}>
+          <Col className="mt-3" xs={6} sm={4} md={3} key={id}>
             <img
               src={img}
               alt={name}
@@ -32,7 +32,7 @@ const Doctors = ({ apps, setApps }) => {
                 setDep(dep)
               }}
             />
-            <h5>{name}</h5>
+            <h5 className="mt-2">{name}</h5>
             <h6>{dep}</h6>
           </Col>
         ))}
